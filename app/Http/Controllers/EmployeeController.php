@@ -9,6 +9,8 @@
 	
 	class EmployeeController extends Controller
 	{
+		private $user = null;
+		
 		public function index()
 		{
 			if (request()->ajax() && request('_type') == 'query')
