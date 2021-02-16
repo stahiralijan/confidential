@@ -20,7 +20,7 @@
                 <div class="form-group">
                     <label for="name" class="control-label">Punishment in brief:</label>
                     <div>
-                        <input class="form-control @error('name') is-invalid @enderror" type="text" name="name" id="name" placeholder="Designation Name..." required autocomplete="off" value="{{ old('name') }}">
+                        <input class="form-control @error('name') is-invalid @enderror" type="text" name="name" id="name" placeholder="Punishment in brief..." required autocomplete="off" value="{{ old('name') }}">
                         @error('name')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>

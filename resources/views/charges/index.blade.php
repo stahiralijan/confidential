@@ -18,8 +18,8 @@
                 <thead>
                 <tr>
                     <th>Sr</th>
-                    <th>Name</th>
-                    <th>Description</th>
+                    <th>Charge Name</th>
+                    <th>Charge Description</th>
                     <th>Enquiries</th>
                 </tr>
                 </thead>

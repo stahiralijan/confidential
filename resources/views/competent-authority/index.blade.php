@@ -18,7 +18,7 @@
                 <thead>
                 <tr>
                     <th>Sr</th>
-                    <th>Name</th>
+                    <th>Authority Name</th>
                     <th>Designation</th>
                 </tr>
                 </thead>

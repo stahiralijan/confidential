@@ -22,7 +22,7 @@
 								->limit(15)->latest()->get()->toJson();
 			}
 			
-			$employees = Employee::select(['id','fullname','fathername', 'employee_code', 'mobile_number'])
+			$employees = Employee::select(['id','cnic','fullname','fathername', 'employee_code', 'mobile_number'])
 				->latest()->paginate();
 			
 			return view('employees.index', compact('employees'));

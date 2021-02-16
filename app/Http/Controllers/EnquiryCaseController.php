@@ -165,7 +165,7 @@
 			$enquiryCase->update($valid);
 			$enquiryCase->save();
 			
-			\Notify::success("Case number ($enquiryCase->enq_no) finalized successfully", 'Case finalized');
+			\Notify::success("Case number ($enquiryCase->enquiry_no) finalized successfully", 'Case finalized');
 			
 			return redirect(action('EnquiryCaseController@index'));
 		}

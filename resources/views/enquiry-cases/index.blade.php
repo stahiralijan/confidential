@@ -140,6 +140,15 @@
                     //    console.log(jQuery.parseJSON( data ));
                    // }
                 },
+                // "columnDefs": [
+                //         {
+                //             "targets": 2,
+                //             "data": 'competent_authority.name',
+                //             "render": function ( data, type, row ) {
+                //                 return data.competent_authority.name +', '+ data.competent_authority.designation.name;
+                //             }
+                //         }
+                //     ],
                 columns: [
                     {data: 'enquiry_no', name: 'enquiry_no'},
                     {data: 'employee.fullname', name: 'employee.fullname'},
@@ -149,7 +158,7 @@
                     {data: 'office.name', name: 'office.name', orderable: false},
                     {data: 'charges.name', name: 'charges.name', orderable: false},
                     {data: 'issue_date', name: 'issue_date'},
-                    {data: 'competent_authority.name', name: 'competent_authority.name'},
+                    {data: 'competent_authority.name', name: 'competent_authority.name', orderable: false},
                     {data: 'action', name: 'action', orderable: false, searchable: false},
                 ]
             });

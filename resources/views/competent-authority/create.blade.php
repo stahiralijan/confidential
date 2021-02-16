@@ -17,11 +17,8 @@
             @endif
             <form action="{{ action('ComptentAuthorityController@store') }}" method="post" class="form-horizontal">
                 @csrf
-
-                @dump($errors)
-
                 <div class="form-group">
-                    <label for="name" class="control-label">Name:</label>
+                    <label for="name" class="control-label">Authority Name:</label>
                     <div>
                         <input class="form-control @error('name') is-invalid @enderror" type="text" name="name" id="name" placeholder="Authority Name..." required autocomplete="off" value="{{ old('name') }}">
                         @error('name')
